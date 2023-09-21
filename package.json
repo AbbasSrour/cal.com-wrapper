@@ -2,7 +2,7 @@
   "name": "cal.com",
   "description": "cal.com-electron-wrapper",
   "author": "AbbasSrour",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "main.js",
   "scripts": {
