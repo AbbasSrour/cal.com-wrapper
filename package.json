@@ -1,0 +1,53 @@
+{
+  "name": "cal.com",
+  "description": "cal.com-electron-wrapper",
+  "author": "AbbasSrour",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --macos --linux --windows",
+    "release": "np"
+  },
+  "devDependencies": {
+    "electron": "^13.0.0",
+    "electron-builder": "^23.3.3",
+    "np": "^7.6.2",
+    "xo": "^0.51.0"
+  },
+  "np": {
+    "publish": true,
+    "releaseDraft": false
+  },
+  "build": {
+    "appId": "com.AbbasSrour.cal-wrapper",
+    "mac": {
+      "category": "public.app-category.social-networking",
+      "darkModeSupport": true
+    },
+    "dmg": {
+      "iconSize": 160,
+      "contents": [
+        {
+          "x": 180,
+          "y": 170
+        },
+        {
+          "x": 480,
+          "y": 170,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "category": "Network;Chat"
+    }
+  }
+}
