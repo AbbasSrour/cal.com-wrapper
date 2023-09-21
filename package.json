@@ -13,13 +13,13 @@
     "release": "np"
   },
   "devDependencies": {
-    "electron": "^13.0.0",
-    "electron-builder": "^23.3.3",
-    "np": "^7.6.2",
-    "xo": "^0.51.0"
+    "electron": "^26.2.2",
+    "electron-builder": "^24.6.4",
+    "np": "^8.0.4",
+    "xo": "^0.56.0"
   },
   "np": {
-    "publish": true,
+    "publish": false,
     "releaseDraft": false
   },
   "build": {
